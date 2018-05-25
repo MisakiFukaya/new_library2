@@ -12,7 +12,14 @@
   <?=$this->Form->end() ?>
 </div>
 <div id="right_center">
-  <br>
+
+  <?php var_dump($count); ?>
+  <h3><?= __('Rentals') ?></h3>
+
+  <table id="test_table" border="1">
+    <?php if (!empty($rentals)): ?>
+      <?php foreach ($rentals as $rentals): ?>   
+
 
 
   <table id="test_table" border="1">
