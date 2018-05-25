@@ -15,43 +15,38 @@
   <?= $this->Form->create($bookstate,['type'=>'post','url'=>['controller'=>'Bookstates','action'=>'view']]) ?>
 
 
-
-    <table class="vertical-table">
+    <table border='1' id="test_table">
         <tr>
-            <th scope="row"><?= __('Book') ?></th>
+            <th scope="col"><?= __('タイトル') ?></th>
             <td><?= $bookstate->has('book') ? $this->Html->link($bookstate->book->name, ['controller' => 'Books', 'action' => 'view', $bookstate->book->id]) : '' ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($bookstate->id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('State') ?></th>
+            <th scope="col"><?= __('蔵書冊数') ?></th>
             <td><?= $this->Number->format($bookstate->state) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Arrival Date') ?></th>
+            <th scope="col"><?= __('入荷年月日') ?></th>
             <td><?= h($bookstate->arrival_date) ?></td>
         </tr>
 
         <tr>
-            <th scope="row"><?= __('Category') ?></th>
+            <th scope="col"><?= __('廃棄年月日') ?></th>
             <td><?= h($bookstate->delete_date) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Publisher') ?></th>
-            <td><?= $this->Number->format($bookstate->id) ?></td>
+            <th scope="col"><?= __('出版社ID') ?></th>
+            <td><?= $bookstate->has('book') ? $this->Html->link($bookstate->book->publisher_id, ['controller' => 'Books', 'action' => 'view', $bookstate->book->id]) : '' ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Isbn') ?></th>
+            <th scope="col"><?= __('Isbn番号') ?></th>
             <td><?= $bookstate->has('book') ? $this->Html->link($bookstate->book->isbn, ['controller' => 'Books', 'action' => 'view', $bookstate->book->id]) : '' ?> </td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Author') ?></th>
+            <th scope="col"><?= __('著者名') ?></th>
             <td><?= $bookstate->has('book') ? $this->Html->link($bookstate->book->author, ['controller' => 'Books', 'action' => 'view', $bookstate->book->id]) : '' ?> </td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Publish Date') ?></th>
+            <th scope="col"><?= __('出版日') ?></th>
             <td><?= $bookstate->has('book') ? $this->Html->link($bookstate->book->publish_date, ['controller' => 'Books', 'action' => 'view', $bookstate->book->id]) : '' ?> </td>
         </tr>
 

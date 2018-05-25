@@ -35,6 +35,7 @@ class Rental extends Entity
         'user_id' => true,
         'reservation_id' => true,
         'rent_date' => true,
+        'limit_date'=>true,
         'return_date' => true,
         'pressing_letter' => true,
         'bookstate' => true,

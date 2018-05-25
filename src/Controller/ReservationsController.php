@@ -38,9 +38,9 @@ class ReservationsController extends AppController
           }else{
             $reservations = $this->Reservations->find()->where(['user_id'=>$find]);
           }
-            }else{
+        }else{
             $reservations = $this->Reservations->find('all');
-            }
+        }
         //ここまで追加
 
         $reservations = $this->paginate($reservations);

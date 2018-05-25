@@ -61,6 +61,12 @@
         </div>
 
 
+
+    </div>
+    <div id="right">
+      <div id="content">
+        <?=$this->fetch('content')?>
+
       </div>
       <div id="right">
         <?=$this->Flash->render()?>
