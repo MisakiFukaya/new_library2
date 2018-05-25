@@ -50,10 +50,10 @@ class UsersController extends AppController
 
     public function search()
     {
-        if($this->request->is('post')){
 
-          $query = $this->request->data['Users']['query'];
-          $condition = ['conditions'=>['id'=>$query]];
+        if($this->request->is('post')){
+          $find = $this->request->data['Users']['find'];
+          $condition = ['conditions'=>['id'=>$find]];
           $data = $this->Users->find('all',$condition);
         }else{
           $data = $this->Users->find('all');

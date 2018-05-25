@@ -10,6 +10,7 @@
 
   新規会員の情報を入力してください
 
+
 </div>
 <div id="right_center">
 
@@ -69,7 +70,7 @@
       <?= $this->Paginator->next(__('next') . ' >') ?>
       <?= $this->Paginator->last(__('last') . ' >>') ?>
     </ul>
-    
+
   </div>
 </div>
 

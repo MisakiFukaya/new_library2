@@ -176,8 +176,8 @@ class BookstatesController extends AppController
 
     public function search()
     {
-        if ($this->request->isPost()){
-          $find = $this->request->data['Bookstates']['find'];
+        if ($this->request->isGet()){
+          $find = $this->request->data['Users']['find'];
 
   //@tani l154~217
         /*  $condition = ['conditions'=> ['or'=>['name like'=>'%'.$find.'%','isbn like'=>'%'.$find.'%']],

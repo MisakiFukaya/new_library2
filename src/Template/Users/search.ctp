@@ -23,7 +23,7 @@
   <table  border='1' id="test_table">
     <tr>
 
-      
+
       <th scope="col"><?= $this->Paginator->sort('id',['label'=>'会員番号']) ?></th>
       <th scope="col"><?= $this->Paginator->sort('last_name',['label'=>'姓']) ?></th>
       <th scope="col"><?= $this->Paginator->sort('first_name',['label'=>'名']) ?></th>
