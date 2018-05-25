@@ -48,10 +48,10 @@
 
         <div id="menu">
           <br>
-          <a href=""><font color="black">・会員管理</font></a><br><br>
-          <a href=""><font color="black">・資料管理</font></a><br><br>
-          <a href=""><font color="black">・貸出</font></a><br><br>
-          <a href=""><font color="black">・返却</font></a><br><br>
+          <a href=""><font color="black"><a href="http://localhost/library_system/Users/">・会員管理</font></a><br><br>
+          <a href=""><font color="black"><a href="http://localhost/library_system/bookstates/">・資料管理</font></a><br><br>
+          <a href=""><font color="black"><a href="http://localhost/library_system/rentals/">・貸出</font></a><br><br>
+          <a href=""><font color="black"><a href="http://localhost/library_system/rentals/returncheck/">・返却</font></a><br><br>
           <a href=""><font color="black">・予約</font></a><br><br>
           <a href=""><font color="black"><s>・督促状管理</s></font></a>
         </div>
